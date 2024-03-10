@@ -76,9 +76,15 @@ const MainHeader = () => {
         <div className="fixed top-[48px] md:hidden left-0 translate-y-[0] bg-black/45 z-20 duration-500 w-full h-full">
           <div className="max-h-[max-content] w-full relative z-30 bg-white">
             <ul className="text-center">
-              <li className="py-5 border-b-2 border-gray-200">Home</li>
+              <Link to="/Homepage">
+                <li className="py-5 border-b-2 border-gray-200">Home</li>
+              </Link>
               <li className="py-5 border-b-2 border-gray-200">Stays</li>
-              <li className="py-5 border-b-2 border-gray-200">Become a host</li>
+              <Link to="/Signup">
+                <li className="py-5 border-b-2 border-gray-200">
+                  Become a host
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
